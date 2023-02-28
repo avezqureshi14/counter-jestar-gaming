@@ -1,0 +1,69 @@
+
+
+.container .section{
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.border{
+    color: #21ebff;
+    background: rgb(0, 0, 20);
+  }
+
+.btn4{
+    width: 160px;
+    height: 50px;
+    position: relative;
+    color: #21ebff;
+    transition: 0.5s;
+    background: rgb(0, 0, 20);
+    border: none;
+    overflow: hidden;
+}
+
+
+.btn4:hover{
+    background: #21ebff;
+    color: #21ebff;
+    box-shadow: 0 0 50px #21ebff;
+    color: rgb(0, 0, 20);
+}
+
+.btn4::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #21ebff;
+    border-left: 2px solid #21ebff;
+    transition: 0.5s;
+    transition-delay: 0s;
+
+}
+
+.btn4:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+.btn4:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff;
+    border-right: 2px solid #21ebff;
+    transition: 0.5s;
+    transition-delay: 0s;
+
+}
+
+.btn4:hover::after{
+    width: 100%;
+    height: 100%;
+}
